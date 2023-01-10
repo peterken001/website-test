@@ -1,0 +1,105 @@
+body {margin: 0;
+background-color: aquamarine;
+font-family: 'Open Sans', sans-serif;
+
+}
+
+
+ul {
+  list-style-type: none;
+  margin:0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(136, 131, 131);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #404140;
+}
+
+.box{
+
+  background-color: lightblue;
+  text-align: center;
+  height: 380px;
+  width: 380px;
+  margin-top: 45px;
+  margin-left: 35px;
+}
+.peter{
+  background-color: lightskyblue;
+  text-align: center;
+  height: 380px;
+  width: 380px;
+  margin-top: -400px;
+  margin-left: 420px;
+}
+
+.logo{
+
+  background-color:blue;
+  height: 190px;
+  width: 190px;
+  margin-top: -380px;
+  margin-left: 810px;
+
+}
+
+.foto{
+  background-color: blue;
+  height: 190px;
+  width: 190px;
+  margin-top: 0px;
+  margin-left: 810px;
+
+}
+
+
+.stefan{
+  background-color: lightskyblue;
+  text-align: center;
+  height: 380px;
+  width: 380px;
+  margin-top: -400px;
+  margin-left: 1010px; 
+}
+
+.text{
+
+    background-color: lightblue;
+    text-align: center;
+    height: 380px;
+    width: 380px;
+    margin-top: -400px;
+    margin-left: 1400px;
+}
+
+.inhoud{
+background-color: lightseagreen;
+margin-left: 35px;
+
+
+}
+img{
+  height: 190px;
+}
+
