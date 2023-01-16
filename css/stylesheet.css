@@ -1,27 +1,32 @@
 body {margin: 0;
-background-color: aquamarine;
+background-color: lightyellow;
 font-family: 'Open Sans', sans-serif;
-
 }
-
-
+h1 {
+  font-size: 4em;
+  margin-top: 0;
+  
+}
 ul {
   list-style-type: none;
-  margin:0;
+  margin: 10px;
   padding: 0;
   overflow: hidden;
-  background-color: rgb(136, 131, 131);
-  position: fixed;
-  top: 0;
-  width: 100%;
+  background-color:lightgray;
 }
 
 li {
   float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+ 
+  border-right: none;
 }
 
 li a {
-  display: block;
+  display: block ;
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -29,77 +34,78 @@ li a {
 }
 
 li a:hover:not(.active) {
-  background-color: #111;
+  background-color: red;
 }
 
 .active {
-  background-color: #404140;
+  background-color: grey;
 }
 
-.box{
 
-  background-color: lightblue;
+.container{
+  display: grid;
+  width: auto;
+  max-width: auto;
+  margin: 10px;
+  
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  
+  grid-template-areas: "header   header   header "
+                       "main     main     main "
+                       "footer   footer   footer ";
+}
+
+.container div{
+  color: black;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.header {
+  background: lightgray;
   text-align: center;
-  height: 380px;
-  width: 380px;
-  margin-top: 45px;
-  margin-left: 35px;
+  grid-area: header;
 }
-.peter{
-  background-color: lightskyblue;
-  text-align: center;
-  height: 380px;
-  width: 380px;
-  margin-top: -400px;
-  margin-left: 420px;
-}
-
-.logo{
-
-  background-color:blue;
-  height: 190px;
-  width: 190px;
-  margin-top: -380px;
-  margin-left: 810px;
-
-}
-
 .foto{
-  background-color: blue;
-  height: 190px;
-  width: 190px;
-  margin-top: 0px;
-  margin-left: 810px;
-
+background: lightgray; 
+width: 125px;
+height: 125px;
+float: left;
+}
+.logo{
+  background: lightgray; 
+  width: 125px;
+  height: 125px;
+  float: right;
+  }
+.main {
+  background: lightgray;
+  grid-area: main;
+  
+  display: grid;
+  
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 20px;  
+  
 }
 
-
-.stefan{
-  background-color: lightskyblue;
-  text-align: center;
-  height: 380px;
-  width: 380px;
-  margin-top: -400px;
-  margin-left: 1010px; 
+.bigimg {
+  background: #da6f2b;
+  grid-column: span 2;
 }
 
-.text{
-
-    background-color: lightblue;
-    text-align: center;
-    height: 380px;
-    width: 380px;
-    margin-top: -400px;
-    margin-left: 1400px;
+.blogart {
+  background: #777879;
+  height: 400px;
 }
 
-.inhoud{
-background-color: lightseagreen;
-margin-left: 35px;
-
-
+.footer {
+  background: lightgray;
+  grid-area: footer;
 }
+
 img{
-  height: 190px;
+width: 125px;
 }
-
