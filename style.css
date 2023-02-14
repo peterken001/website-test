@@ -83,21 +83,25 @@ li a:hover:not(.active) {
 .boxes {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-column: 25%;
-  grid-row: 25%;
-  column-gap: 1em;
-  row-gap: 1em;
-  float: center;
+  grid-auto-rows: auto;
+  column-gap: 2em;
+  row-gap: 2em;
+  justify-items: center;
   padding-top: 40px;
+  padding-bottom: 40px;
+}
+.banner {
+  background-color: #bbac31;
+  font-size: 30px;
 }
 .boxes-1 {
   display: grid;
+
   grid-template-columns: repeat(4, 1fr);
-  grid-column: 25%;
-  grid-row: 25%;
-  column-gap: 1em;
-  row-gap: 1em;
-  float: center;
+  grid-auto-rows: auto;
+  column-gap: 2em;
+  row-gap: 2em;
+  justify-items: center;
   padding-top: 40px;
 }
 #Copyright {
